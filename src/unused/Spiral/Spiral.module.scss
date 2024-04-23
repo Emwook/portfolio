@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.spiral{
+height:100vh;
+background-position: center center;
+z-index: 5;
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+background: rgb(245,212,163);
+background: radial-gradient(circle, rgba(245,212,163,0.9110169491525424) 0%, rgba(142,122,94,0.6588983050847458) 50%, rgba(0,0,0,0.9067796610169492) 100%);
+}
