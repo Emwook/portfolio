@@ -1,0 +1,25 @@
+@import '../../styles/settings.scss';
+
+.navbar{
+    font-family:'Exo', sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, $color-light 60%, $color-secondary 100%);
+    margin-bottom: 20px;
+}
+
+.logo{
+    font-size: $base-size * 2;
+}
+
+.link {
+    font-size: $base-size * 1.5;
+    text-decoration: none;
+    color: $color-dark;
+    margin: 0 10px;
+    &:hover{
+        color: $color-danger;
+        font-size: $base-size * 1.6;
+        transition: 0.2s all ease-in-out;
+        margin: 0 8px;
+    }
+}

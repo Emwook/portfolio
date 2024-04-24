@@ -1,2 +1,20 @@
 @import '../../styles/settings.scss';
 
+.home {
+    height: 70vh;
+    position: relative;
+    margin: auto;
+    .row {
+        position: relative;
+        margin: 20vh auto;
+        .img {
+            width: 160px;
+            object-fit: fill;            
+        }
+        .paragraph{
+            margin-top: 10px;
+            .title {
+            }  
+        }
+    }
+}

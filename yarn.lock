@@ -1966,6 +1966,16 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
+"@twicpics/components@^0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.29.0.tgz#ebd250afc68306dfc2b4abbcd17ee81b8e5c011b"
+  integrity sha512-JJJf2iFIlmY8KBNIV4mk5FRU+foYkKq/sntfX8zJ4SS61GIZbYLWc3wN1n7x97r/kLaqsa+D73EuWBck3J+ALA==
+
+"@twicpics/react@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/react/-/react-0.3.0.tgz#213ee58f3ec93fa64846bbcb2d5ce5b13dae57de"
+  integrity sha512-e4doO5bIenvpL5aHvDBc9ow2j+kDS3EMN9WIQ5Ub3TFX/TXnSDnVzyg+7sPw7T3g8UTtrHMyl0diMgUxfS2PDQ==
+
 "@types/aria-query@^5.0.1":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-5.0.4.tgz#1a31c3d378850d2778dabb6374d036dcba4ba708"
