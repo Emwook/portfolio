@@ -1,0 +1,9 @@
+@import '../../styles/settings.scss';
+
+.button {
+    position: relative;
+    &:hover{
+        scale: 1.05;
+        transition: 0.2s all ease-in-out;
+    }
+}
