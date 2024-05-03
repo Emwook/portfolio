@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Contact from './components/Contact/Contact';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (

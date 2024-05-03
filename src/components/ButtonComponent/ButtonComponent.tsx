@@ -10,7 +10,7 @@ interface ButtonProps {
 const ButtonComponent: React.FC<ButtonProps> = ({ children }) => {
 
     return(
-        <Button className={clsx(`mt-2 w-50 bg-light text-dark border-success`, styles.button)}>{children}</Button>
+        <Button className={clsx(`mt-2 w-50 bg-light text-dark border-success border-radius-5 rounded-lg`, styles.button)}>{children}</Button>
     );
 };
 

@@ -6,7 +6,7 @@ import clsx from 'clsx';
 const NavBar = () =>{
     //on select change the color to show which page the user's on
     return (
-        <Navbar expand="lg" className={clsx("bg-secondary bg-opacity-25 text-dark lead h1 px-4 mb-4 d-flex justify-content-between", styles.navbar)}>
+        <Navbar expand="lg" className={clsx("bg-light text-dark lead h1 px-4 my-3 d-flex justify-content-between", styles.navbar)}>
             <Navbar.Brand className={styles.logo}>Emilia Łukasiuk</Navbar.Brand>
             <Row>
                 <Col>

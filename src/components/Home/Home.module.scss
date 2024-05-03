@@ -61,12 +61,12 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        margin: 10px auto;
+        margin: 16px auto;
         padding: 10px;
-        background: rgba($color-secondary, 0.15);
+        background: rgba($color-light, 1);
         border-radius: 12px;
-        max-width: fit-content;
         min-width: min-content;
+        //border: 1px solid $color-dark;
         .buttonRow{
             display: flex;
             justify-content: center;
@@ -75,7 +75,8 @@
             margin: auto;
         }
         .text{
-            background: rgba($color-light, 1);
+            background: rgba($color-secondary, 0.2);
+            color: $color-dark;
             border-radius: 12px;
             padding: 10px;
             width: fit-content;
@@ -83,6 +84,16 @@
             .link {
                 text-decoration: none;
                 color: $color-success;
+            }
+        }
+        .projectsSection {
+            h1 {
+                position: relative;
+                margin-left: 10px;
+            }
+            .projectsList {
+                min-width:20vw;
+                padding:10px;
             }
         }
         .col {
@@ -93,12 +104,13 @@
                 border-radius: 12px;
                 aspect-ratio: 1;
                 object-fit: cover;
-                border: 4px solid $color-light;           
+                border: 4px solid rgba($color-secondary, 0.2);           
             }
             .title {
                 font-family: 'Exo', sans-serif;
                 margin-bottom: 10px;
                 font-weight: 400;
+                color: $color-dark;
             }
             .subtitle {
                 font-weight: 100;

@@ -3,14 +3,10 @@ import React from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import clsx from 'clsx';
+import ProjectBox from '../ProjectBox/ProjectBox';
+import ProjectsData from '../../data/ProjectsData';
 
 const Home: React.FC = () => {
-    
-    const buttonTable: { [key: string]: string[] } = {
-        '1': ['contact me'],
-        '2': ['see my work'],
-    };
-
     return (
         <Container className={styles.home}>
             <Row className={styles.row}>
@@ -38,12 +34,22 @@ const Home: React.FC = () => {
                     </Row>
                 </Col>
             </Row>
-            {/* remake the next rows to match with width of the first one, make it neat */}
             <Row className={styles.row}>
-                <Col xs={12} className={styles.text}>
-                        <h1>My latest projects</h1>
-                        <h5 className={styles.about}>Small projects box</h5>
-                        {/* here make small windows with links to recently made sites, with descriptions and used technologies */}
+                <Col xs={12} className={styles.projectsSection}>
+                        <h1 className='lead'>My latest projects</h1>
+                        <Row className={styles.projectsList}>
+                            {ProjectsData.map(projectData => (
+                                <Col xs={12} md={4}>
+                                    <ProjectBox key={projectData.id}
+                                    name={projectData.name}
+                                    tech={projectData.tech}
+                                    description={projectData.description}
+                                    link={projectData.link}
+                                    github={projectData.github}
+                                    />
+                                </Col>
+                            ))}
+                        </Row>
                         <ButtonComponent>see more</ButtonComponent>
                 </Col>
             </Row>
