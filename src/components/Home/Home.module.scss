@@ -58,46 +58,13 @@
     position: relative;
     margin: 10px auto;
     .row {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
         margin: 16px auto;
-        padding: 10px;
         background: rgba($color-light, 1);
         border-radius: 12px;
-        min-width: min-content;
-        //border: 1px solid $color-dark;
-        .buttonRow{
-            display: flex;
-            justify-content: center;
-            position: relative;
-            padding: 10px 0;
-            margin: auto;
-        }
-        .text{
-            background: rgba($color-secondary, 0.2);
-            color: $color-dark;
-            border-radius: 12px;
-            padding: 10px;
-            width: fit-content;
-            margin: auto;
-            .link {
-                text-decoration: none;
-                color: $color-success;
-            }
-        }
-        .projectsSection {
-            h1 {
-                position: relative;
-                margin-left: 10px;
-            }
-            .projectsList {
-                min-width:20vw;
-                padding:10px;
-            }
-        }
+        max-width: fit-content;
+        min-height: 70vh;
         .col {
-            margin: 0 auto;
+            margin: 10vh auto;
             border-radius: 12px;
             .img {
                 margin: 0 auto;
@@ -106,18 +73,48 @@
                 object-fit: cover;
                 border: 4px solid rgba($color-secondary, 0.2);           
             }
-            .title {
-                font-family: 'Exo', sans-serif;
-                margin-bottom: 10px;
-                font-weight: 400;
+            .text {
+                .title {
+                    font-family: 'Exo', sans-serif;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                    color: $color-dark;
+                    font-size: 2* $base-size;
+                }
+                .subtitle {
+                    font-weight: 100;
+                    font-size: $base-size * 1.7;
+                }
+                .description {
+                    font-size: $base-size * 1.2;
+                }
+            }
+            .contact {
+                border: 2px solid rgba($color-secondary, 0.2);
                 color: $color-dark;
+                border-radius: 12px;
+                width: fit-content;
+                .link {
+                    text-decoration: none;
+                    color: $color-success;
+                    font-size: 30px;
+                    padding:10px;
+                    &:hover { //to fix
+                        scale: 1.5;
+                        transition: 0.2s all ease-in-out;
+                    }
+                }
             }
-            .subtitle {
-                font-weight: 100;
-                font-size: $base-size * 1.5;
+        }
+        .projectsSection {
+            justify-content: center;
+            h1 {
+                position: relative;
+                width: fit-content;
+                margin: auto;
             }
-            .description {
-                font-size: $base-size;
+            .projectsList {
+                min-width:20vw;
             }
         }
     }

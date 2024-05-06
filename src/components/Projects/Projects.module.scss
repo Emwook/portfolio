@@ -1,3 +1,24 @@
-.intro {
-    z-index: 5;
+@import '../../styles/settings.scss';
+
+
+.row {
+    margin: 16px auto;
+    background: rgba($color-light, 1);
+    border-radius: 12px;
+    min-width: min-content;
+    .col {
+        margin: 0 auto;
+        border-radius: 12px;
+        .projectsSection {
+            justify-content: center;
+            h1 {
+                position: relative;
+                width: fit-content;
+                margin: auto;
+            }
+            .projectsList {
+                min-width:20vw;
+            }
+        }
+    }
 }
