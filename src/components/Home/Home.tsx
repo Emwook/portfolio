@@ -10,7 +10,7 @@ const Home: React.FC = () => {
                 <Col xs={12} md={6} className={clsx(styles.col, 'd-flex justify-content-sm-center')}>
                     <Image src={require('../../images/aiimg2.png')} className={styles.img} />
                 </Col>
-                <Col xs={12} md={6} className={styles.col}>
+                <Col xs={12} md={6} className={clsx(styles.col)}>
                     <Row xs={12}>
                         <Col className={styles.text}>
                             <h2 className={styles.title}>Emilia Łukasiuk</h2>
