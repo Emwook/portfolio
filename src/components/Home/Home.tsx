@@ -31,13 +31,6 @@ const Home: React.FC = () => {
                             </p>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col xs={12} className={styles.contact}>
-                            <a href='https://github.com/Emwook/' className={styles.link}><i className="bi bi-github"></i> </a>
-                            <a href='https://www.linkedin.com/in/emilia-%C5%82ukasiuk-836b112b9/' className={styles.link}><i className="bi bi-linkedin"></i></a>
-                            <a href='https://www.facebook.com/lukasiuke/' className={styles.link}><i className="bi bi-facebook"></i></a>
-                        </Col>
-                    </Row>
                 </Col>
             </Row>
         </Container>

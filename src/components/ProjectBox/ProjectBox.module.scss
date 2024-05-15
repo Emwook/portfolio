@@ -6,40 +6,78 @@
     padding: 4px;
     background-color: rgba($color-secondary, 0.2);
     color: $color-dark;
-    margin: 5px;
+    margin: 0 6px;
     min-width: 20vw;
-    height: 100%;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
+    border-top: 3px solid rgba($color-success, 1);
+    border-bottom: 3px solid rgba($color-success, 1);
+    text-align: center;
     h4 {
+        margin: 10px;
         margin-bottom: 6px;
         font-family: 'Exo', sans-serif;
     }
     ul {
         list-style: none;
-        max-width: 90%;
+        max-width: 80%;
         padding: 0;
+        margin: 0 auto;
         li{
             padding: 2px;
             margin: 2px;
             display: inline-block;
-            color: $color-dark;
+            background: $color-light;
             border-radius: 4px;
-            border: 1px solid $color-success;
+            //border: 1px solid $color-success;
             font-family: 'Exo', sans-serif;
         }
     }
     h6 {
-        font-size: 15px;
-        margin-top: auto;
+        font-size: 16px;
+        margin: 24px auto;
+        width:80%;
     }
     .links {
-        margin-top: 6px;
-            a {
-                font-size: 12px;
-                padding: 6px;
-                text-decoration: none;
-                color: $color-success;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+            .link {
+                padding: 20px;
+                position: relative;
+                transition: left 0.3s ease;
+                font-size: 20px;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    color: $color-success;
+                    .iconText {
+                        font-size: 10px;
+                        position: absolute;
+                        font-size: 10px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                        visibility: visible;
+                        padding: 5px;
+                        border-radius: 5px;
+                        transition: opacity 0.4s ease, visibility 0.4s ease, left 0.4s ease;
+                    }        
+                }            
+                &:hover{
+                    left: -20px; /* Adjust the amount to slide */
+                    transition: 0.3s all ease-in-out;
+                    font-size: 30px;
+                    margin: 0;
+                    .iconText {
+                        opacity: 1;
+                        visibility: visible;
+                        left: calc(50% + 16px); /* Adjust the spacing here */
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
             }
         }
 }

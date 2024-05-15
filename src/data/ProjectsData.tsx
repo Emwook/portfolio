@@ -20,7 +20,7 @@ const ProjectsData = [
     id: 3,
     name: 'Future project',
     tech: ['TypeScript','React'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rem nostrum necessitatibus doloremque',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     github: 'https://github.com/Emwook/waiter-app',
     link: 'http://localhost:3000/'
   },

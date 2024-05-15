@@ -57,14 +57,12 @@
 
 .home {
     position: relative;
-    margin: 20px auto;
+    margin: 0 auto;
     .row {
-        margin: 16px auto;
+        margin: 24px auto;
         background: rgba($color-light, 1);
         border-radius: 12px;
         border-bottom: 4px solid $color-success;
-        //border-right: 4px solid $color-success;
-
         max-width: fit-content;
         min-height: 70vh;
         .col {
@@ -98,24 +96,6 @@
                 }
                 .description {
                     font-size: $base-size * 1.2;
-                }
-            }
-            .contact {
-                margin: 0 auto 12px auto;
-                //border: 4px solid rgba($color-secondary, 0.2);
-                color: $color-dark;
-                border-radius: 12px;
-                padding: 10px 10%;
-                width: fit-content;
-                .link {
-                    text-decoration: none;
-                    color: $color-success;
-                    font-size: 32px;
-                    padding:16px;
-                    &:hover {
-                        color: $color-dark;
-                        transition: 0.2s all ease-in-out;
-                    }
                 }
             }
         }

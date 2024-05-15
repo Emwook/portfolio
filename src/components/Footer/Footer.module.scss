@@ -1,0 +1,22 @@
+@import '../../styles/settings.scss';
+
+.contact {
+    color: $color-dark;
+    border-radius: 12px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    .link {
+        margin: 0;
+        text-decoration: none;
+        color: $color-dark;
+        font-size: 32px;
+        padding:16px;
+        &:hover {
+            
+            color: $color-success;
+            transition: 0.2s all ease-in-out;
+        }
+    }
+}

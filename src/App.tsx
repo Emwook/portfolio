@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Contact from './components/Contact/Contact';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Container>
+      <Footer/>
     </div>
   );
 }
