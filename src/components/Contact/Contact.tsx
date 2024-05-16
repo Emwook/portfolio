@@ -1,11 +1,23 @@
 import styles from './Contact.module.scss'
+import { Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className={`pt-5 ${styles.intro}`}>
-            <h1>Full contact page</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et sequi dignissimos consectetur facilis ducimus debitis! Neque, quod tempore! Reiciendis a, perspiciatis iure consequuntur aut eveniet illo, ipsa minima, beatae fugit nisi. Nulla aut et praesentium molestiae labore fuga animi consectetur eum autem dicta doloremque atque impedit officiis sit unde maiores possimus obcaecati veniam recusandae omnis illum facere pariatur, porro adipisci. Aut repellendus non maiores recusandae quia explicabo repellat voluptate laudantium nostrum deserunt incidunt dignissimos, architecto qui minus culpa aliquid delectus pariatur quos perspiciatis aperiam! Laudantium praesentium molestias cum ut rerum nostrum, voluptatibus voluptates eligendi architecto velit id debitis quam!</p>
-        </div>
+        <Row className={styles.row}>
+                <Col xs={12} className={styles.col}>
+                    <div className={styles.box}>
+                        <h1>Contact me</h1>
+                        <span className={styles.contactLink}><i className='bi bi-telephone'/> +48 605 237 576</span> <br/>
+                        <span className={styles.contactLink}><i className='bi bi-envelope'/> lukasiuk.emilia@gmail.com</span>
+                    </div>
+                    <div className={styles.box}>
+                        <h1>find me on</h1>
+                        <a href='https://github.com/Emwook/' className={styles.contactLink}><i className="bi bi-github"/> /Emwook</a><br/>
+                        <a href='https://www.linkedin.com/in/emilia-%C5%82ukasiuk-836b112b9/' className={styles.contactLink}><i className="bi bi-linkedin"/> @emilia-lukasiuk</a><br/>
+                        <a href='https://www.facebook.com/lukasiuke/' className={styles.contactLink}><i className="bi bi-facebook"/> /lukasiuke</a>
+                    </div>
+                </Col>
+        </Row>
     );
 }
 export default Contact;

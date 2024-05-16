@@ -1,20 +1,31 @@
 @import '../../styles/settings.scss';
 
 .contact {
+    position: absolute;
+    left: 50%;
+    //width: 720px;
+    bottom: 1%;
+    transform: translateX(-50%);
+    border-bottom: 4px solid $color-success;
     color: $color-dark;
+    background-color: $color-light;
     border-radius: 12px;
-    margin-top: auto;
     display: flex;
     justify-content: center;
     margin-top:20px;
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        bottom: 3%;
+    }
     .link {
         margin: 0;
         text-decoration: none;
         color: $color-dark;
         font-size: 32px;
         padding:16px;
+        //background-color: $color-light;
         &:hover {
-            
+            scale: 115%;
             color: $color-success;
             transition: 0.2s all ease-in-out;
         }

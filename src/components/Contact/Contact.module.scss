@@ -1,3 +1,38 @@
-.intro {
-    z-index: 5;
+@import '../../styles/settings.scss';
+
+.row {
+    margin: auto;
+    background: rgba($color-light, 1);
+    border-radius: 12px;
+    max-width: fit-content;
+    border-bottom: 4px solid $color-success;
+    min-width: 80vw;
+    min-height: 70vh;
+    text-align: left;
+    .col {
+        position: relative;
+        margin: 0 auto;
+        border-radius: 12px;
+        .box {
+            //border: 1px solid red;
+            width: fit-content;
+            padding: 10px 0;
+            h1 {
+                //margin-bottom: 16px;
+                text-align: center;
+                margin: 12px 12px 16px 12px;
+            }
+            margin: 0 auto;
+            .contactLink {
+                margin: 0 12px;
+                font-weight: 100;
+                font-size: 18px;
+                text-decoration: none;
+                color: $color-dark;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }

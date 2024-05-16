@@ -16,13 +16,13 @@
     .link {
         font-size: $base-size * 1.5;
         text-decoration: none;
-        color: $color-success;
-        margin: 0 10px;
+        color: $color-dark;
+        padding: 2px 12px;
+        margin: 0 2px;
+        border-radius: 10px;
         &:hover{
-            color: rgba($color-dark, 0.6);
-            font-size: $base-size * 1.6;
-            transition: 0.2s all ease-in-out;
-            margin: 0 8px;
+            color: rgba($color-success, 1);
+            transition: 0.1s all ease-in-out;
         }
     }
 }
