@@ -1,27 +1,33 @@
 @import '../../styles/settings.scss';
 
 .projectBox {
+    padding: 0 auto;
     position: relative;
     border-radius: 8px;
     padding: 4px;
-    background-color: rgba($color-secondary, 0.2);
     color: $color-dark;
-    margin: 0 6px;
-    min-width: 20vw;
+    //background: rgba($color-light, 0.6);
+    margin: 10px 6px;
+    width: 100%;
+    height:100%;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    border-top: 3px solid rgba($color-success, 1);
-    border-bottom: 3px solid rgba($color-success, 1);
+    
+    //border-left: 1px solid rgba($color-success, 0.1);
+    //border-right: 1px solid rgba($color-success, 0.1);
     text-align: center;
     h4 {
-        margin: 10px;
+        font-size: 30px;
+        width:60%;
+        margin: 10px auto;
         margin-bottom: 6px;
         font-family: 'Exo', sans-serif;
     }
     ul {
         list-style: none;
-        max-width: 80%;
+        width:60%;
+        margin: 10px auto;
         padding: 0;
         margin: 0 auto;
         li{
@@ -30,25 +36,29 @@
             display: inline-block;
             background: $color-light;
             border-radius: 4px;
-            //border: 1px solid $color-success;
+            font-size: 16px;
             font-family: 'Exo', sans-serif;
         }
     }
     h6 {
         font-size: 16px;
-        margin: 24px auto;
-        width:80%;
+        margin: 20px auto;
+        width: 60%;
     }
     .links {
         margin-top: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        width:60%;
+        margin: auto;
             .link {
+                display: inline;
                 padding: 20px;
                 position: relative;
                 transition: left 0.3s ease;
-                font-size: 20px;
-                padding: 10px;
+                font-size: 40px;
+                padding: 10px 30px;
                 a {
                     text-decoration: none;
                     color: $color-success;
@@ -67,14 +77,14 @@
                     }        
                 }            
                 &:hover{
-                    left: -20px; /* Adjust the amount to slide */
+                    left: -20px;
                     transition: 0.3s all ease-in-out;
-                    font-size: 30px;
-                    margin: 0;
+                    //font-size: 30px;
+                    //margin: 10px;
                     .iconText {
                         opacity: 1;
                         visibility: visible;
-                        left: calc(50% + 16px); /* Adjust the spacing here */
+                        left: calc(50% + 16px); 
                         transition: 0.4s all ease-in-out;
                     }
                 }

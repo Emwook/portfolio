@@ -1,0 +1,39 @@
+@import '../../styles/settings.scss';
+
+@media (min-width: 992px) { //above md size
+    .row{
+        max-width: 1600px;
+        margin-right: 0;
+        padding: 8px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) { //md size
+    .row{
+        max-width: 750px;
+        margin: 0;
+        padding: 8px 0;
+    }
+}
+@media (max-width: 768px) { //xs size
+    .row{
+        max-width: 450px; 
+        margin: 0 auto ;
+        padding: 0;
+    }
+}
+
+.container {
+    position: relative;
+    margin: 20px auto;
+    .row {
+        padding-top:40px;
+        margin: 24px auto;
+        min-height: 70vh;
+        background: $color-light;
+        border-radius: 12px;
+        border-bottom: 4px solid $color-success;
+        border-right: 1px solid rgba($color-success, 0.1);
+        border-left: 1px solid rgba($color-success, 0.1);
+        border-top: 1px solid rgba($color-success, 0.1);
+    }
+}

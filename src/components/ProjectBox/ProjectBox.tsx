@@ -21,7 +21,7 @@ const ProjectBox: React.FC<ProjectBoxProps> = ( {name, tech, description, link, 
                 <div className={styles.link}>
                     <a href={link}>
                         <i className="bi bi-globe-americas"></i>
-                        <span className={styles.iconText} >visit the site</span>
+                        <span className={styles.iconText}>visit the site</span>
                     </a>
                 </div>
                 <div className={styles.link}>

@@ -1,25 +1,21 @@
 @import '../../styles/settings.scss';
 
-
-.row {
-    margin: 16px auto;
-    background: rgba($color-light, 1);
-    border-radius: 12px;
-    max-width: fit-content;
-    border-bottom: 4px solid $color-success;
-    min-height: 70vh;
+.projects {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    .col {
-        margin: 0 auto;
+    .title {
+        margin: 4px auto;
+        width: fit-content;
+    }
+    .projectsList {
+        border-right: 3px solid rgba($color-success, 1);
+        border-left: 3px solid rgba($color-success, 1);
+        border-top: 1px solid rgba($color-secondary, 0.2);
+        border-bottom: 1px solid rgba($color-secondary, 0.2);
         border-radius: 12px;
-        h1 {
-            margin-top: 12px;
-        }
-        .projectsSection {
-            justify-content: center;
-            .projectsList {
-                min-width:20vw;
-            }
-        }
+        background: rgba($color-success, 0.05);
+        margin: 10px auto;
+        width: 52vw;
     }
 }
