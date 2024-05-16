@@ -1,12 +1,12 @@
 @import '../../styles/settings.scss';
 
 .row {
-    margin: auto;
+    margin: 0 auto;
     background: rgba($color-light, 1);
     border-radius: 12px;
     max-width: fit-content;
     border-bottom: 4px solid $color-success;
-    min-width: 80vw;
+    min-width: 100%;
     min-height: 70vh;
     text-align: left;
     .col {
@@ -28,7 +28,7 @@
                 font-weight: 100;
                 font-size: 18px;
                 text-decoration: none;
-                color: $color-dark;
+                color: $color-success;
                 i {
                     font-size: 20px;
                 }
