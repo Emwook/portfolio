@@ -1,10 +1,11 @@
 import styles from './Projects.module.scss';
 import { Row, Col, Carousel} from 'react-bootstrap';
+import React from 'react';
 import ProjectBox from '../ProjectBox/ProjectBox';
 import ProjectsData from '../../data/ProjectsData';
 import clsx from 'clsx';
     
-const Projects = () => {
+const Projects: React.FC = () => {
     return (
         <div className={styles.projects}>
             <h1 className={styles.title}>My latest projects</h1>

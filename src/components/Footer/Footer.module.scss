@@ -30,14 +30,8 @@
             &:hover {
                 scale: 115%;
                 color: $color-success;
-                transition: 0.2s all ease-in-out;
+                transition: $transition;
             }
-        }
-    }
-    &:hover {
-        &:first-child {
-            bottom: 100px;
-            transition: 0.3s all ease-in-out;
         }
     }
 }

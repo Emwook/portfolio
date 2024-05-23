@@ -1,14 +1,14 @@
 @import '../../styles/settings.scss';
-/*
+
 @media (min-width: 992px) { //above md size
     .projectBox {
-        min-height: 200px;
+        min-height: 310px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) { //md size
     .projectBox {
-        min-height: 300px;
+        min-height: 330px;
     }
 }
 
@@ -17,7 +17,7 @@
         min-height: 420px;
     }
 }
-*/
+
 
 
 
@@ -30,11 +30,12 @@
     background: rgba($color-success, 0.05);
     margin: 10px auto;
     width: 75%;
-    height: 100%;
-    min-height: 420px;
+    height: 80%;
+    max-height: 420px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    //aspect-ratio: 1.5;
     h4 {
         font-size: 30px;
         width:60%;
@@ -69,8 +70,8 @@
         flex-direction: row;
         justify-content: space-around;
         max-width: 400px;
-        width:100%;
-        margin: auto;
+        width: 100%;
+        margin:  auto;
             .link {
                 display: inline;
                 padding: 20px;

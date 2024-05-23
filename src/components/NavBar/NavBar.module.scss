@@ -14,7 +14,13 @@
         font-size: $base-size * 2;
         color: $color-success;
     }
-    
+    .toggler{
+        border: none; // Remove default border
+        &:focus {
+            outline: none; // Remove focus outline
+            box-shadow: none; // Remove box shadow on focus
+        }
+    }
     .link {
         font-size: $base-size * 1.5;
         text-decoration: none;
@@ -24,7 +30,10 @@
         border-radius: 10px;
         &:hover{
             color: rgba($color-success, 1);
-            transition: 0.1s all ease-in-out;
+            transition: $transition;
         }
+    }
+    .activeLink {
+        color:rgba($color-success, 1);
     }
 }

@@ -6,6 +6,6 @@
     margin: 0 auto;
     &:hover{
         scale: 1.05;
-        transition: 0.2s all ease-in-out;
+        transition: $transition;
     }
 }

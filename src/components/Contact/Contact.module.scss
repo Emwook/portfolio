@@ -4,28 +4,25 @@
     position: relative;
     margin: 0 auto;
     border-radius: 12px;
-    //border: 1px solid red;
-
+    max-width: 500px;
     .box {
-        //border: 1px solid red;
+        height: 45%;
         max-width: 400px;
         aspect-ratio: 2;
-        // /max-width: 30vw;
-        //width: fit-content;
         padding: 10px 0;
-        margin: 10px auto;
+        margin: 6px auto;
         margin-top: 0;
         border-radius: 12px;
         background-color: rgba($color-secondary, 0.05);
         border-bottom: 3px solid rgba($color-success, 1); 
         h1 {
-            //margin-bottom: 16px;
+            font-weight: 400;
             text-align: center;
             margin: 12px 12px 16px 12px;
         }
         .contactLink {
             margin: 0 32px;
-            font-weight: 100;
+            font-weight: 300;
             font-size: 18px;
             text-decoration: none;
             color: $color-success;
@@ -34,4 +31,4 @@
             }
         }
     }
-}
+}      

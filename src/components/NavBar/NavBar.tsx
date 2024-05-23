@@ -1,30 +1,52 @@
 import styles from './NavBar.module.scss';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 import clsx from 'clsx';
 
-const NavBar = () =>{
-    //on select change the color to show which page the user's on
+const NavBar: React.FC = () => {
+    const [expanded, setExpanded] = useState<boolean>(false);
+    const handleToggle = () => setExpanded(prevExpanded => !prevExpanded);
+    const handleClose = () => setExpanded(false);
+
     return (
-        <Navbar expand="lg" className={clsx("bg-light lead px-4 my-3 d-flex justify-content-between", styles.navbar)}>
+        <Navbar expand="md" className={clsx("bg-light lead px-4 my-3", styles.navbar)} expanded={expanded}>
             <Navbar.Brand className={styles.logo}>Emilia Łukasiuk</Navbar.Brand>
-            <Row>
-                <Col>
-                    <Navbar.Brand>
-                        <NavLink to="/" className={styles.link}>Home</NavLink>
-                    </Navbar.Brand>
-                </Col>
-                <Col>
-                    <Navbar.Brand>
-                        <NavLink to="/projects" className={styles.link}>Projects</NavLink>
-                    </Navbar.Brand>
-                </Col>
-                <Col>
-                    <Navbar.Brand>
-                        <NavLink to="/contact" className={styles.link}>Contact</NavLink>
-                    </Navbar.Brand>
-                </Col>
-            </Row>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} className={styles.toggler} />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ms-auto">
+                    <NavLink 
+                        to="/" 
+                        className={({ isActive }: { isActive: boolean }) => isActive 
+                            ? `${styles.link} ${styles.activeLink}` 
+                            : styles.link
+                        }
+                        onClick={handleClose}
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink 
+                        to="/projects" 
+                        className={({ isActive }: { isActive: boolean }) => isActive 
+                            ? `${styles.link} ${styles.activeLink}` 
+                            : styles.link
+                        }
+                        onClick={handleClose}
+                    >
+                        Projects
+                    </NavLink>
+                    <NavLink 
+                        to="/contact" 
+                        className={({ isActive }: { isActive: boolean }) => isActive 
+                            ? `${styles.link} ${styles.activeLink}` 
+                            : styles.link
+                        }
+                        onClick={handleClose}
+                    >
+                        Contact
+                    </NavLink>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     );
 }
