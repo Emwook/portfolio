@@ -6,7 +6,7 @@ const Contact = () => {
         <>
             <Col xs={12} className={styles.col}>
                 <div className={styles.box}>
-                    <h1>Contact me</h1>
+                    <h1>contact me</h1>
                     <span className={styles.contactLink}><i className='bi bi-telephone'/> +48 605 237 576</span> <br/>
                     <span className={styles.contactLink}><i className='bi bi-envelope'/> lukasiuk.emilia@gmail.com</span>
                 </div>

@@ -1,21 +1,44 @@
 @import '../../styles/settings.scss';
 
+
+@media (min-width: 992px) { //above md size
+    .projectsList {
+        min-width: 600px;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { //md size
+    .projectsList {
+        min-width: 400px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) { //xs size
+    .projectsList {
+        min-width: 300px;
+        max-width: 500px;
+    }
+}
+
 .projects {
     display: flex;
     flex-direction: column;
     text-align: center;
     .title {
-        margin: 4px auto;
+        margin: 0px auto;
         width: fit-content;
+        font-size: 32px;
+        //color: rgba($color-success, 1)
     }
     .projectsList {
-        border-right: 3px solid rgba($color-success, 1);
-        border-left: 3px solid rgba($color-success, 1);
-        border-top: 1px solid rgba($color-secondary, 0.2);
-        border-bottom: 1px solid rgba($color-secondary, 0.2);
+        //border-right: 3px solid rgba($color-success, 1);
+        //border-left: 3px solid rgba($color-success, 1);
         border-radius: 12px;
-        background: rgba($color-success, 0.05);
         margin: 10px auto;
-        width: 52vw;
+        width:100%;
+        min-width: 300px;
+        max-width: 800px;
     }
 }

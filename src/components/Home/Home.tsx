@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     return (
         <>
             <Col xs={12} md={6} className={clsx(styles.col, 'd-flex justify-content-sm-center')}>
-                <Image src={require('../../images/aiimg2.png')} className={styles.img} />
+                <Image src={require('../../images/prof1.png')} className={styles.img} />
             </Col>
             <Col xs={12} md={6} className={clsx(styles.col)}>
                 <Row xs={12}>
@@ -15,18 +15,18 @@ const Home: React.FC = () => {
                         <h2 className={styles.title}>Emilia Łukasiuk</h2>
                         <h5 className={styles.subtitle}>about me</h5>
                         <p className={styles.description}>
-                            I'm a passionate tech enthusiast <br/>
-                            with a love for problem-solving <br/>
-                            and a constant thirst for knowledge. <br/>
-                            <br/>
-                            Recently completed an intensive Frontend React course, <br/>
-                            sharpening my skills in web development. <br/>
-                            I thrive in collaborative environments <br/> 
-                            where creativity flourishes. <br/>
-                            Committed to continuous growth, <br/>
-                            I'm excited about the opportunity <br/>
-                            to apply my technical skills <br/>
-                            and enthusiasm to drive impactful results.
+                            I&nbsp;am a&nbsp;dedicated tech enthusiast  
+                            with a&nbsp;genuine passion for&nbsp;problem-solving 
+                            and continuous learning.
+                            With&nbsp;a&nbsp;solid foundation in web development
+                            I&nbsp;thrive in collaborative environments 
+                            that foster creativity. Always eager to grow, 
+                            I&nbsp;look forward to applying my skills 
+                            and enthusiasm to contribute meaningfully
+                            to impactful projects.
+                            I&nbsp;believe in the power of&nbsp;technology to&nbsp;drive positive change and&nbsp;am committed to staying
+                            updated with industry trends. My goal is to&nbsp;continuously improve and make a&nbsp;lasting impact
+                            through my&nbsp;work.
                         </p>
                     </Col>
                 </Row>

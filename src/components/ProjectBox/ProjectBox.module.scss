@@ -1,27 +1,46 @@
 @import '../../styles/settings.scss';
+/*
+@media (min-width: 992px) { //above md size
+    .projectBox {
+        min-height: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { //md size
+    .projectBox {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) { //xs size
+    .projectBox {
+        min-height: 420px;
+    }
+}
+*/
+
+
 
 .projectBox {
     padding: 0 auto;
     position: relative;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 4px;
     color: $color-dark;
-    //background: rgba($color-light, 0.6);
-    margin: 10px 6px;
-    width: 100%;
-    height:100%;
-    min-height: 50vh;
+    background: rgba($color-success, 0.05);
+    margin: 10px auto;
+    width: 75%;
+    height: 100%;
+    min-height: 420px;
     display: flex;
     flex-direction: column;
-    
-    //border-left: 1px solid rgba($color-success, 0.1);
-    //border-right: 1px solid rgba($color-success, 0.1);
     text-align: center;
     h4 {
         font-size: 30px;
         width:60%;
         margin: 10px auto;
         margin-bottom: 6px;
+        color: $color-success;
         font-family: 'Exo', sans-serif;
     }
     ul {
@@ -46,11 +65,11 @@
         width: 60%;
     }
     .links {
-        margin-top: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width:60%;
+        max-width: 400px;
+        width:100%;
         margin: auto;
             .link {
                 display: inline;

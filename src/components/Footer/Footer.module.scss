@@ -1,36 +1,43 @@
 @import '../../styles/settings.scss';
-
-.contact {
-    position: absolute;
-    left: 50%;
-    //width: 720px;
-    bottom: 1%;
-    transform: translateX(-50%);
-    border-bottom: 4px solid $color-success;
-    border-left: 1px solid rgba($color-success, 0.2);
-    border-right: 1px solid rgba($color-success, 0.2);
-    border-top: 1px solid rgba($color-success, 0.2);
-    color: $color-dark;
-    background-color: $color-light;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    margin-top:20px;
-    &:hover {
-        transition: 0.3s all ease-in-out;
-        bottom: 3%;
-    }
-    .link {
-        margin: 0;
-        text-decoration: none;
+.box {
+    position: relative;
+    height: 120%;
+    //border: 1px solid red;  
+    //padding: 10px;
+    .footer {
+        top: 0; //fix it please, the positioning is off
+        position: absolute;
+        left: 50%;
+        //margin-bottom: 12px;
+        width: fit-content;
+        transform: translateX(-50%);
+        border-bottom: 4px solid $color-success;
+        border-left: 1px solid rgba($color-success, 0.2);
+        border-right: 1px solid rgba($color-success, 0.2);
+        border-top: 1px solid rgba($color-success, 0.2);
         color: $color-dark;
-        font-size: 32px;
-        padding:16px;
-        //background-color: $color-light;
-        &:hover {
-            scale: 115%;
-            color: $color-success;
-            transition: 0.2s all ease-in-out;
+        background-color: $color-light;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        .link {
+            margin: 0;
+            text-decoration: none;
+            color: $color-dark;
+            font-size: 40px;
+            padding:16px;
+            &:hover {
+                scale: 115%;
+                color: $color-success;
+                transition: 0.2s all ease-in-out;
+            }
+        }
+    }
+    &:hover {
+        &:first-child {
+            bottom: 100px;
+            transition: 0.3s all ease-in-out;
         }
     }
 }
