@@ -1,14 +1,11 @@
 @import '../../styles/settings.scss';
 .box {
     position: relative;
-    height: 120%;
-    //border: 1px solid red;  
-    //padding: 10px;
+    padding: 56px 0;
     .footer {
-        top: 0; //fix it please, the positioning is off
+        bottom: 0; 
         position: absolute;
         left: 50%;
-        //margin-bottom: 12px;
         width: fit-content;
         transform: translateX(-50%);
         border-bottom: 4px solid $color-success;
@@ -32,6 +29,10 @@
                 color: $color-success;
                 transition: $transition;
             }
+        }
+        &:hover {
+            bottom: 5%;
+            transition: $transition;
         }
     }
 }
